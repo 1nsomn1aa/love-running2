@@ -36,13 +36,13 @@ header a {
 }
 
 #menu {
-font-size: 110%;
-letter-spacing: 4px;
-list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-#menu > li {
-margin-bottom: 1em;
+#menu>li {
+    margin-bottom: 1em;
 }
 
 .active {
@@ -74,19 +74,46 @@ nav {
     font-size: 2rem;
 }
 
-h1{
-font-family: 'Oswald', sans-serif;
-text-transform: uppercase;
-letter-spacing: 2px;
-color: #252525;
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
+/* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
+/* Footer */
 footer {
     background-color: lightgreen;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
