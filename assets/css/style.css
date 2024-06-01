@@ -280,10 +280,9 @@ footer {
     #benefits {
         display: flex;
         flex-direction: row;
-        flex
     }
 
-    #benefits > div  {
+    #benefits > div {
         flex: 1;
     }
 
